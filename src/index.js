@@ -42,11 +42,7 @@ app.get('/admin-panel', async (req, res) => {
 app.get('/booking', (req, res) => {
     res.render('booking')})
 
-    app.get('/index', (req, res) => {
-      res.render('index')
-    })
-
-app.get('', (req, res) => {
+app.get('/index', (req, res) => {
     fs.readFile('./products.json', 'utf-8', (error, data) => {
         if (error) {
         res.status(500).send('something is wrong')
