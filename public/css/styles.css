@@ -130,7 +130,7 @@ input{
     background-position:center;
     background-repeat:no-repeat;
     background-attachment:fixed;
-    padding: 100px;
+    padding: 25px 7px 15px 7px;
 }
 
 
@@ -243,6 +243,10 @@ background-attachment:fixed;
      padding: 0px 15px 0px 5px;
  }
 
+ #map p {
+    text-align: center;
+    padding: 15px;
+}
 
 
 
