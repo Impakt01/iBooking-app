@@ -1,0 +1,32 @@
+{
+    "featuredProducts": [
+        {
+            "id": 1,
+            "name": "beard-oil",
+            "price": 30,
+            "imgName": "beard-oil.png",
+            "src": "productcheckout1"
+        },
+        {
+            "id": 2,
+            "name": "tweezer",
+            "price": 5.99,
+            "imgName": "tweezer.png",
+            "src": "productcheckout2"
+        },
+        {
+            "id": 3,
+            "name": "wig",
+            "price": 50,
+            "imgName": "wig-.png",
+            "src": "productcheckout3"
+        },
+        {
+            "id": 4,
+            "name": "lipgloss",
+            "price": 15.99,
+            "imgName": "lipgloss-.png",
+            "src": "productcheckout4"
+        }
+    ]
+}

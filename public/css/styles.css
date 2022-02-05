@@ -1,0 +1,274 @@
+.body{
+    background-color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 300px;
+}
+
+.admin-body {
+    background-image:url("../img/background.jpg");
+    background-size:cover; 
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    padding: 50px 10px 5px 10px;
+}
+
+.admin-panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px grey solid;
+    height: 100vh;
+}
+
+.admin-panel h1{
+    text-align: center;
+    font-weight: bold;
+   
+}
+
+.admin-panel h3{
+    text-align: center;
+    font-weight: bold;
+   
+}
+.form-cont {
+    padding: 50px 0px 50px 0px;
+    display: flex;
+   width:500px;
+    flex-direction: column;
+    background-color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 3px 0px black;
+}
+
+input{
+    width: 400px;
+    border: 1px grey solid;
+    padding: 15px;
+    font-size: 13px;
+    background-color: white;
+}
+
+.box1 {
+    padding-bottom: 20px;
+}
+
+.box2 {
+    padding-bottom: 20px;
+}
+
+.box3 {
+    padding-bottom: 20px;
+}
+
+.box4 button {
+    padding: 18px 50px 18px 50px;
+    background-color: blue;
+    color: white;
+    font-size: 13px;
+    border: none;
+    border-radius: 20px;
+}
+
+.box4 button:hover {
+    background-color: rgb(16, 16, 207);
+    font-weight: bold;
+    color:black;
+}
+
+.success-div {
+    display: flex; 
+   flex-direction: column;
+   margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.success-div img{
+    width: 200px;
+}
+
+.success-div .confirmation{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    padding: 25px;
+    border-radius: 20px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#myNavStyles {
+    background-color: #f9f9f9;
+    border: none;
+   
+}
+
+
+
+#myNavbar #myListStyle li a {
+    color: #ff9cbd;
+    
+    font-size: 18px;
+}  
+
+#myNavbar #myListStyle li a:hover {
+    border-bottom: 2px #baf1ff solid;
+}
+
+.booking-page{
+    background-image:url("../img/background.jpg");
+    background-size:cover; 
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    padding: 100px;
+}
+
+
+#input {
+    padding: 20px;
+}
+
+
+.booking-page-box2 {
+    padding: 100px;
+    background-color: white;
+    box-shadow: 3px 2px 10px black;
+    
+}
+
+label{
+    font-size: 17px;
+}
+
+.booking-page-box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 0px 20px 20px 0px;
+}
+
+.booking-page-box1 h1 {
+    text-align: center;
+}
+.booking-page-box1 h2 {
+    text-align: center;
+}
+
+.booking-page-box1 p {
+    text-align: center;
+}
+
+form a {
+    background-color: #005c91;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+form a:hover {
+    background: none;
+    border: 1px grey solid;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+ .location h1{
+    text-align: center;
+    font-weight: bold;
+    color: #005c91;
+ }
+
+ .location p{
+    text-align: center;
+    font-size: 18px;
+    color: #ff9cbd;
+ }
+
+ .location{
+     padding: 70px;
+ }
+
+ .location div{
+     background-color: white;
+     width: 50%;
+     margin: auto;
+ }
+
+ #locationID {
+     background-image:url("./img/shop.jpg");
+background-size:cover; 
+background-position:center;
+background-repeat:no-repeat;
+background-attachment:fixed;
+ }
+
+ .footer1{
+     background-color:#005c91 ;
+     padding: 100px 0px;
+ }
+
+ #footerdiv2 h1 {
+     font-weight: bold;
+    color: white;
+ }
+
+ #footerdiv1 h2 {
+     font-weight: bold;
+    color: white;
+ }
+
+ #footerdiv1 address {
+     font-weight: bold;
+    color: white;
+ }
+
+
+
+ #footerdiv2 a{
+     color:white;
+     border-right: 2px white solid;
+     padding: 0px 15px 0px 5px;
+ }
+
+
+
+
+
+@media  (max-width: 800px) {
+
+    .admin-panel{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        border: none;
+        border-bottom: 1px grey solid;
+    }
+
+    
+#footerdiv1 {
+    margin-left: 100px;
+ }
+ #footerdiv2{
+     margin-left: 100px;
+ }
+
+}
+
+
+
+
+

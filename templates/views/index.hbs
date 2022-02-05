@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <meta name="description" content="graphics design logo flyer">
+  <meta name="keywords" content="logo graphics design">
+  <meta name="author" content="impact illustration">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="icon" href="/img/clipart1108218.png">
+  <script src="/js/app.js" defer></script>
+  
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/e0495e7cf3.js" crossorigin="anonymous"></script>
+  
+ 
+<title> Homepage </title>
+
+<style>
+
+    .backGround {
+        background-image:url("./img/background.jpg");
+background-size:cover; 
+background-position:center;
+background-repeat:no-repeat;
+background-attachment:fixed;
+    }
+
+    #section1 {
+        padding: 120px 0px 120px 0px;
+    }
+
+    #subSection1 {
+        margin-top: 120px;
+    }
+
+  
+    #section1 a:hover{
+        background-color: #fc5f5f; 
+        font-weight: bold;
+    }
+    #section1 a {
+        background-color: #ff9cbd;
+        font-size: 18px;
+        color: 005c91;
+        font-weight: bold;
+        border-radius: 25px;
+        padding: 15px 35px 15px 35px;
+        text-decoration: none;
+    }
+
+
+    #section1 h1{
+        font-weight: bold;
+        color: #005c91;
+        text-align: left;
+    }
+    
+    #section1 p {
+        color: #717290;
+        text-align: left;
+    }
+
+    #myNavStyles {
+        background-color: #f9f9f9;
+        border: none;
+       
+    }
+
+   
+
+    #myNavbar #myListStyle li a {
+        color: #ff9cbd;
+        
+        font-size: 18px;
+    }  
+
+    #myNavbar #myListStyle li a:hover {
+        border-bottom: 2px #baf1ff solid;
+    }
+
+    #featuredProducts h1 {
+        text-align: center;
+        padding: 40px;
+        color: #005c91;
+        font-weight: bold;
+        font-size: 50px;
+    }
+
+    #productsRow {
+        padding: 80px 150px 80px 150px;
+    }
+
+    .productBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        padding: 35px;
+    }
+
+    .productBox a {
+        background-color: #005c91;
+        color: white;
+        padding: 15px 25px 15px 25px;
+        border: none;
+        border-radius: 15px;
+        text-decoration: none;
+    }
+
+    .productBox a:hover {
+        background-color: green;
+        color: white;
+        border: 1px #005c91 solid;
+    }
+  
+        .productBox:hover {
+            border: 1px #005c91 solid;
+        border-radius: 25px;
+          
+        }
+
+    .productBox p{
+        text-align: center;
+    }
+
+      .cart-section{
+        padding: 100px;
+       
+    }
+
+    .cart-section {
+        background-image:url("./img/background.jpg");
+background-size:cover; 
+background-position:center;
+background-repeat:no-repeat;
+background-attachment:fixed;
+padding: 80px;
+    }
+
+    #products-container {
+        max-width: 650px;
+        justify-content: space-around;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+
+    .product-header{
+        width: 100%;
+        max-width: 650px;
+        display: flex;
+        justify-content: flex-start;
+        margin: 0 auto;
+    }
+
+    .checkout-button{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+    .checkout-button button {
+        background-color: #005c91;
+        color: white;
+        padding: 15px 25px 15px 25px;
+        border: none;
+        border-radius: 15px;
+        font-weight: bold;
+    }
+
+    .checkout-button button:hover {
+        background-color: green;
+    }
+
+    .delete-cart-item {
+        background-color: red;
+        border: none;
+        border-radius: 20px;
+        color: white;
+        padding: 6.5px;
+        font-size: 10px;
+    }
+
+    
+    .total{
+         display: flex;
+        justify-content: flex-end;
+    }
+
+    .total strong {
+        font-size: 18px;
+        padding-left: 20px;
+    }
+
+    .cart-row {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .cart-item {
+         width: 55%;
+        border-bottom: 1px solid grey;
+    }
+
+    .cart-price {
+         width: 15%;
+        border-bottom: 1px solid grey;
+        display: flex;
+        align-items: center;
+    }
+   
+
+    .product-title{
+        width: 55%;
+        border-bottom: 1px solid grey;
+    }
+
+    .cart-quantity {
+        width: 30%;
+        border-bottom: 1px solid grey;
+        display: flex;
+        align-items: center;
+    }
+
+    .price {
+        width: 15%;
+        border-bottom: 1px solid grey;
+        display: flex;
+        align-items: center;
+    }
+
+    .quantity {
+        width: 30%;
+        border-bottom: 1px solid grey;
+        display: flex;
+        align-items: center;
+    }
+
+    body {
+        min-height: 100vh;
+    }
+
+    .class-quantity-input {
+        width: 50px;
+    }
+
+      .item-img{
+        width: 50px;
+    }
+
+    .servicesSection{
+        background-color: #005c91 ;
+        color: white;
+        padding: 80px;
+    }
+
+    .servicesSection h1 {
+        text-align: center;
+        padding: 35px;
+        font-size: 50px;
+    }
+
+    .servicesSection  .servicesBooklink {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .servicesSection  .servicesBooklink a {
+        background-color: white;
+        color: #005c91;
+        padding: 15px 25px 15px 25px;
+        border: none;
+        border-radius: 15px;
+        font-weight: bold;
+        
+    }
+
+    .location h1{
+       text-align: center;
+       font-weight: bold;
+       color: #005c91;
+    }
+
+    .location p{
+       text-align: center;
+       font-size: 18px;
+       color: #ff9cbd;
+    }
+
+    .location{
+        padding: 70px;
+    }
+
+    .location div{
+        background-color: white;
+        width: 50%;
+        margin: auto;
+    }
+
+    #locationID {
+        background-image:url("./img/shop.jpg");
+background-size:cover; 
+background-position:center;
+background-repeat:no-repeat;
+background-attachment:fixed;
+    }
+
+    .footer1{
+        background-color:#005c91 ;
+        padding: 100px 0px;
+    }
+   
+    #footerdiv2 h1 {
+        font-weight: bold;
+       color: white;
+    }
+
+    #footerdiv1 h2 {
+        font-weight: bold;
+       color: white;
+    }
+
+    #footerdiv1 address {
+        font-weight: bold;
+       color: white;
+    }
+
+   
+
+    #footerdiv2 a{
+        color:white;
+        border-right: 2px white solid;
+        padding: 0px 15px 0px 5px;
+    }
+
+   
+    
+
+
+    
+
+
+
+
+    @media  (max-width: 762px) {
+        #subSection1 {
+        margin-top: -30px;
+        margin-bottom: 30px;
+    }
+
+    #section1 {
+        padding: 100px 0px 100px 0px;
+    }
+
+    #section1 h1{
+        text-align: center;
+    }
+
+    #section1 p{
+        text-align: center;
+    }
+
+ #myNavStyles {
+    background-color: white;
+   }
+
+   #myNavbar {
+       text-align: center;
+       margin-top: 35px;
+   }
+
+   #subSectionLink {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   #servicesROW {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+   }
+
+   #footerdiv1 {
+       margin-left: 100px;
+    }
+    #footerdiv2{
+        margin-left: 100px;
+    }
+    
+
+    }
+</style>
+
+</head>
+
+<body>
+
+<div class="backGround">
+    <nav class="navbar-default navbar navbar-fixed-top" id="myNavStyles">
+            <div class="container" class="row">
+
+              
+
+                <div class="col-md-6">
+        <div class="nav-header">
+
+            <a href="index" class="navbar-brand"> YOURLOGO </a>
+            
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span   class="icon-bar"></span>
+                <span   class="icon-bar"></span>
+                <span   class="icon-bar"></span>   
+            </button>
+
+           
+       </div>
+        </div>
+
+        
+        <div class="col-md-6 collapse navbar-collapse" id="myNavbar">
+            <ul  class="nav navbar-nav" id="myListStyle">
+                <li><a href="index"> Home </a></li>
+                <li><a href="about.html"> About Us</a></li>
+                <li><a 
+                style=" color: #005c91;
+                background-color: #ff9cbd ;"
+                href="booking"> Book Now </a></li>
+            </ul>
+        </div>
+        </div>
+
+    </nav>
+
+
+    <!-- section 1 -->
+
+    <div class="container" id="section1">
+
+        <div class="col-md-6" id="subSection1">
+
+            <h1> Get Your Business An Online Presence That Will Take It To The Next Level</h1>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nisi sint reiciendis dolorem? 
+                Inventore, rerum maiores sequi, reprehenderit illo omnis saepe eius in repellat dolorum quia facilis impedit fuga minus?</p>
+<br>
+                
+                <div id="subSectionLink">
+                    <a href="about.html">  About Us </a>
+                    <a href="booking"> Book Now <i class="fas fa-calendar-check"></i></a>
+                </div>
+
+
+
+        </div>
+
+        <div class="col-md-6">
+            <img src="./img/sample1.png" alt="sample" class="img-responsive">
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- products section -->
+
+<div class="container-fluid" id="featuredProducts">
+
+    <h1> Featured Products </h1>
+
+    <div class="row" id="productsRow">
+
+        {{#each productsInfo}}
+        <div class="col-md-3"> 
+            <div class="productBox" data-item-id={{ this.id }}>
+                <img src="./img/{{this.imgName}}" alt="beard oil" class="img-responsive shop-item-image">
+                <h3 class="shop-item-title">{{this.name}}</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur enim nemo eaque consequatur! 
+                    Aspernatur architecto, aut unde voluptas </p>
+                    <h4 class="shop-item-price"> {{this.price}} </h4>
+                {{!-- <button class="add-cart cart1">Add To Cart </button> --}}
+                <a class="shop-item-price" href="{{this.src}}.html"> Buy Now</a>
+            </div>
+        </div>
+         {{/each}}
+    </div>
+
+</div>
+
+<!-- services -->
+<div class="servicesSection" id="services">
+<div class="container" >
+
+    <h1> SERVICES </h1>
+
+    <div class="row" id="servicesROW">
+
+        <div class="col-sm-4">
+            <h3> CLEANSE & EXPOLIATE</h3>
+            <ul>
+                <li> CLEANSING </li>
+                <li> TONERS </li>
+                <li> MAKEUP REMOVAL </li>
+                <li> EXFOLATION </li>
+            </ul>
+        </div>
+
+        <div class="col-sm-4">
+            <h3> HAIRCUT </h3>
+            <ul>
+                <li> FADE </li>
+                <li> CHILDREN HAIRCUT </li>
+                <li> ADULT HAIRCUT </li>
+                <li> SHAVING </li>
+            </ul>
+        </div>
+
+        <div class="col-sm-4">
+            <h3> HAIRSTYLING </h3>
+            <ul>
+                <li> BRAIDS </li>
+                <li> FIXING </li>
+                <li> PONYTAIL </li>
+                <li> LOCS </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="row" id="servicesROW">
+
+        <div class="col-sm-4">
+            <h3> CLEANSE & EXPOLIATE</h3>
+            <ul>
+                <li> CLEANSING </li>
+                <li> TONERS </li>
+                <li> MAKEUP REMOVAL </li>
+                <li> EXFOLATION </li>
+            </ul>
+        </div>
+
+        <div class="col-sm-4">
+            <h3> HAIRCUT </h3>
+            <ul>
+                <li> FADE </li>
+                <li> CHILDREN HAIRCUT </li>
+                <li> ADULT HAIRCUT </li>
+                <li> SHAVING </li>
+            </ul>
+        </div>
+
+        <div class="col-sm-4">
+            <h3> HAIRSTYLING </h3>
+            <ul>
+                <li> BRAIDS </li>
+                <li> FIXING </li>
+                <li> PONYTAIL </li>
+                <li> LOCS </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="servicesBooklink">
+        <a href="booking"> BOOKNOW </a>
+    </div>
+
+</div>
+</div>
+
+<!-- location -->
+<div class="container-fluid" id="locationID">
+
+    <div class="location">
+        <div>
+        <h1> LOCATE US AT </h1>
+        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur,  labore sint quisquam id excepturi,</p>
+        <p style="font-weight: bold; color:#005c91;"> walkins Available</p>
+    </div>
+
+        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50470.07476441257!2d-122.47261935146342!3d37.75769481909827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sng!4v1643531775687!5m2!1sen!2sng" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+        
+    </div>
+
+</div>
+
+<!-- footer -->
+
+<div class="footer1">
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-4" id="footerdiv1">
+            <h2> Follow US</h2>
+           <a> <i style="color: #ff9cbd; width: 100px;" class=" fa-4x fab fa-instagram-square"></i> </a>
+           <a>  <i style="color: #ff9cbd; width: 100px" class=" fa-4x fab fa-facebook-square"></i> </a>
+           <a>  <i style="color: #ff9cbd; width: 100px" class=" fa-4x fab fa-youtube"></i> </a>
+        </div>
+
+        <div class="col-md-4" id="footerdiv1">
+            <h2> Address </h2>
+            <address>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore architecto praesentium, nam,
+                 alias facilis 
+                </address>
+
+        </div>
+
+        <div class="col-md-4" id="footerdiv2">
+            <h1>YOURLOGO</h1>
+            
+                 <a href="about.html">About Us </a>
+                 <a href="booking">BookNow </a>
+            
+        </div>
+
+    </div>
+
+</div>
+</div>
+
+<div class="container">
+
+    <p style="text-align: center; padding: 20px;">© 2022 Impact Illustration. All rights reserved.</p>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
